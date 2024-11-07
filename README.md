@@ -49,4 +49,6 @@ export default tseslint.config({
 })
 ```
 # starwars-app
-# starwars-app
+start app using 
+
+npm run dev
