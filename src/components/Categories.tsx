@@ -14,14 +14,14 @@ export function Categories({
 
   return (
     <>
-      <h4 className="text-lg font-bold mb-2">Categories</h4>
+      <h4 className="text-lg font-bold mb-2 text-white">Categories</h4>
       <ul>
         {
           categories
           ?.filter((category) => category !== 'films')  // Filter out 'film' category as it has no name field
           .map((category:string, index:number) => (
             <li className="mb-2" key={category + index} onClick={() => setCategory(category)}>
-              <button className={`${category === currentCategory ? 'bg-slate-200' : ''} w-full capitalize`}>{category}</button>
+              <button className={`${category === currentCategory ? 'bg-slate-300' : ''} w-full capitalize`}>{category}</button>
             </li>
           )) 
         }

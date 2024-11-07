@@ -41,7 +41,7 @@ function App() {
   }, [currentCategory])
 
   return (
-    <div className="py-8">
+    <div className="py-8 bg-[url('./assets/kylo-ren-star-wars.webp')] bg-cover bg-top min-h-screen">
       <div className="w-full max-w-4xl my-0 mx-auto px-6 flex flex-col md:flex-row gap-4">
         <div className="w-full md:w-3/12">
           <Categories categories={categories} setCurrentCategory={setCurrentCategory} currentCategory={currentCategory}/>
